@@ -1,7 +1,10 @@
+import ResetCSS from "./styles/ResetCSS"
+
 function App() {
 
   return (
     <>
+      <ResetCSS />
       Em construção
     </>
   )
