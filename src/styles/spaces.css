@@ -1,0 +1,13 @@
+:root {
+  --space-medium--largest: 5rem;
+  --space-medium--large: 3.75rem;
+  --space-medium--normal: 2.5rem;
+  --space-medium--small: 2rem;
+
+  --space-regular--large: 1.75rem;
+  --space-regular--normal: 1.25rem;
+  --space-regular--small: 1rem;
+
+  --space-little--normal: 0.5rem;
+  --space-little--small: 0.25rem;
+}
