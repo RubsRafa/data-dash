@@ -44,11 +44,11 @@ h4,
 h5,
 h6,
 a,
-span,
-div {
+span {
   text-size-adjust: auto;
   overflow-wrap: break-word;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 a {
