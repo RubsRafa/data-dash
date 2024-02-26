@@ -1,11 +1,10 @@
-import ResetCSS from "./styles/ResetCSS"
+import Header from "./components/Header"
 
 function App() {
 
   return (
     <>
-      <ResetCSS />
-      Em construção
+      <Header />
     </>
   )
 }
