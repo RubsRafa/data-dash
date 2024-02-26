@@ -16,7 +16,7 @@ export const LogoImage = styled.img`
 
   margin-left: 1.25rem;
 
-  @media(min-width: 24rem){
+  @media(min-width: 31.25rem){
     margin-left: 2rem;
   }
 `;
