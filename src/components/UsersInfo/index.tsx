@@ -10,8 +10,16 @@ import DownArrow from '../../assets/down_arrow_icon.svg'
 import { EmployeeContext } from "../../context/EmployeesData";
 
 const UsersInfo = () => {
-  const [expandedAccordion, setExpandedAccordion] = useState<string>('')
+  const [expandedAccordion, setExpandedAccordion] = useState<string[]>([])
   const { employees } = useContext(EmployeeContext)
+
+  const handleExpandedAccordions = (id: string) => {
+    if (expandedAccordion.includes(id)) {
+      setExpandedAccordion(expandedAccordion.filter((item) => item !== id))
+    } else {
+      setExpandedAccordion([...expandedAccordion, id])
+    }
+  }
 
 
   return (
@@ -25,11 +33,11 @@ const UsersInfo = () => {
             <DesktopInfo>{employee.job}</DesktopInfo>
             <DesktopInfo>{employee.admission_date.slice(8, 10)}/{employee.admission_date.slice(5, 7)}/{employee.admission_date.slice(0, 4)}</DesktopInfo>
             <DesktopInfo>+{employee.phone.slice(0, 2)} ({employee.phone.slice(2, 4)}) {employee.phone.slice(4, 9)}-{employee.phone.slice(9)}</DesktopInfo>
-            <button onClick={() => setExpandedAccordion(expandedAccordion == employee.id ? '' : employee.id)}>
-              <Arrow src={expandedAccordion == employee.id ? UpArrow : DownArrow} alt="seta" />
+            <button onClick={() => handleExpandedAccordions(employee.id)}>
+              <Arrow src={expandedAccordion.includes(employee.id) ? UpArrow : DownArrow} alt="seta" />
             </button>
           </AccordionSummary>
-          {expandedAccordion == employee.id &&
+          {expandedAccordion.includes(employee.id) &&
             <AccordionDetails>
               <div>
                 <Title_Medium>Cargo</Title_Medium>
