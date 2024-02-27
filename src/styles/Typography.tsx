@@ -11,3 +11,9 @@ export const Title_Medium = styled.h2`
   font-weight: var(--fw-500);
   line-height: var(--lh-1);
 `
+
+export const Title_Regular = styled.h3`
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-1);
+`
