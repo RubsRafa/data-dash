@@ -49,6 +49,7 @@ span {
   overflow-wrap: break-word;
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
 }
 
 a {

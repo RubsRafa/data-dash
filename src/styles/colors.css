@@ -9,5 +9,5 @@
   --shadow-light: 0px 2px 4px 0 #00000033;
   --shadow-normal: 0px 2px 8px 0px #00000033;
 
-  --gradient--primary: linear-gradient(0deg, rgba(89,78,210,1) 0%, rgba(90,132,192,1) 50%);
+  --gradient--primary: linear-gradient(0deg, rgba(89,78,210,1) 0%, rgba(90,132,192,1) 100%);
 }
