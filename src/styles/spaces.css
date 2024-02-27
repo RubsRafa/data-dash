@@ -1,13 +1,13 @@
 :root {
-  --space-medium--largest: 5rem;
-  --space-medium--large: 3.75rem;
-  --space-medium--normal: 2.5rem;
-  --space-medium--small: 2rem;
+  --spacing-medium--largest: 5rem;    /* 80px */
+  --spacing-medium--large: 3.75rem;   /* 60px */
+  --spacing-medium--normal: 2.5rem;   /* 40px */
+  --spacing-medium--small: 2rem;      /* 32px */
 
-  --space-regular--large: 1.75rem;
-  --space-regular--normal: 1.25rem;
-  --space-regular--small: 1rem;
+  --spacing-regular--large: 1.75rem;  /* 28px */
+  --spacing-regular--normal: 1.25rem; /* 20px */
+  --spacing-regular--small: 1rem;     /* 16px */
 
-  --space-little--normal: 0.5rem;
-  --space-little--small: 0.25rem;
+  --spacing-little--normal: .5rem;    /* 8px */ 
+  --spacing-little--small: .25rem;    /* 4px */
 }

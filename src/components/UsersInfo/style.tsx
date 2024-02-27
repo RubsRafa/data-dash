@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const UserInfoBox = styled.div`
-  box-shadow: var(--shadow-lightest);
   padding: 0.875rem 1rem;
-
+  
+  box-shadow: var(--shadow--lightest);
   @media(min-width: 31.25rem){
     padding: .875rem 2rem;
   }
 `;
 
 export const Arrow = styled.img`
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: var(--spacing-medium--small);
+  min-height: var(--spacing-medium--small);
 `;
 
 export const AccordionSummary = styled.div`
@@ -25,7 +25,9 @@ export const AccordionSummary = styled.div`
   img {
     max-width: 2.125rem;
     max-height: 2.125rem;
+
     border-radius: 50%;
+    
     object-fit: cover;
   }
 
@@ -34,10 +36,12 @@ export const AccordionSummary = styled.div`
   }
 
   button {
-    background-color: transparent;
     width: fit-content;
-    border: none;
+    
     justify-self: end;
+    
+    background-color: transparent;
+    border: none;
   }
   @media(min-width: 31.25rem){
     grid-template-columns: 12% 20% 20% 28% 20%;
@@ -62,9 +66,12 @@ export const AccordionDetails = styled.div`
   div {
     display: flex;
     flex-wrap: nowrap;
+    
     justify-content: space-between;
+    
     border-bottom: 1px dashed var(--neutral--gray-light);
-    margin-top: 1rem;
+    
+    margin-top: var(--spacing-regular--small);
   }
   @media(min-width: 31.25rem){
     display: none;

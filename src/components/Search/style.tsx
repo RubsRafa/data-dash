@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const SearchBox = styled.section`
-  padding: 1.25rem;
   display: block;
   
+  padding: var(--spacing-regular--normal);
   h1 {
     margin-block: auto;
   }
 
   @media(min-width: 31.25rem) {
     padding-block: 2.75rem;
-    padding-inline: 2rem;
+    padding-inline: var(--spacing-medium--small);
 
     display: flex;
     justify-content: space-between;
@@ -19,16 +19,18 @@ export const SearchBox = styled.section`
 `;
 
 export const SearchInputBox = styled.div`
+  padding: .75rem 1rem;
+  margin-top: var(--spacing-regular--large);
+  
   background-color: var(--neutral--white);
   
-  padding: .75rem 1rem;
-  margin-top: 1.75rem;
-  
-  border-radius: .5rem;
+  border-radius: var(--spacing-little--normal);
   border: 1px solid var(--neutral--gray-light);
 
-  display: flex;
-  justify-content: space-between;
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media(min-width: 31.25rem){
     margin-top: 0;

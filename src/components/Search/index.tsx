@@ -3,6 +3,7 @@ import SearchIcon from '../../assets/search_icon.svg'
 
 import { Title_Big } from "../../styles/Typography";
 import { SearchBox, SearchInputBox } from "./style";
+
 import { searchData } from './services';
 import { EmployeeContext } from '../../context/EmployeesData';
 

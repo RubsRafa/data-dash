@@ -1,3 +1,10 @@
+export interface API<T> {
+  filter(arg0: (employee: EmployeesData) => EmployeesData | undefined): unknown;
+  response: {
+    data: T
+  }
+}
+
 export interface EmployeesData {
   id: string;
   name: string;
@@ -5,11 +12,4 @@ export interface EmployeesData {
   admission_date: string;
   phone: string;
   image: string;
-}
-
-export interface API<T> {
-  filter(arg0: (employee: EmployeesData) => EmployeesData | undefined): unknown;
-  response: {
-    data: T
-  }
 }

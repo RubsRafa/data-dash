@@ -12,6 +12,7 @@ a,
 span,
 div {
   font-family: "Roboto", sans-serif;
+  color: var(--neutral--black);
 }
 
 html,

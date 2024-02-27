@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TableBarBox = styled.nav`
   background: var(--gradient--primary);
   color: var(--neutral--white);
-  box-shadow: var(--shadow-lightest);
+  box-shadow: var(--shadow--lightest);
   
   border-radius: .5rem .5rem 0 0;
 
@@ -18,6 +18,10 @@ export const TableBarBox = styled.nav`
 
   p {
     text-align: center;
+  }
+  
+  h2 {
+    color: var(--neutral--white);
   }
 
   @media(min-width: 31.25rem) {
@@ -35,8 +39,8 @@ export const TableBarBox = styled.nav`
 `;
 
 export const Dot = styled.div`
-  width: .5rem;
-  height: .5rem;
+  width: var(--spacing-little--normal);
+  height: var(--spacing-little--normal);
 
   margin-block: auto;
   
