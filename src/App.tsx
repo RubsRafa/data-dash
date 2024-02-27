@@ -1,14 +1,17 @@
 import DataTable from "./components/DataTable"
 import Header from "./components/Header"
 import Search from "./components/Search"
+import { EmployeeProvider } from "./context/EmployeesData"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Search />
-      <DataTable />
+      <EmployeeProvider>
+        <Header />
+        <Search />
+        <DataTable />
+      </EmployeeProvider>
     </>
   )
 }

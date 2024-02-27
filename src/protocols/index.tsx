@@ -8,6 +8,7 @@ export interface EmployeesData {
 }
 
 export interface API<T> {
+  filter(arg0: (employee: EmployeesData) => EmployeesData | undefined): unknown;
   response: {
     data: T
   }

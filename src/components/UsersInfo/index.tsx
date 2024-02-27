@@ -1,22 +1,19 @@
 import { UserInfoBox, Arrow, AccordionSummary, AccordionDetails, DesktopInfo } from "./style";
 import { Title_Medium, Title_Regular } from '../../styles/Typography';
 
-import { useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 
 import { EmployeesData } from '../../protocols';
 
-import { getEmployeesData } from './services';
-
 import UpArrow from '../../assets/up_arrow_icon.svg'
 import DownArrow from '../../assets/down_arrow_icon.svg'
+import { EmployeeContext } from "../../context/EmployeesData";
 
 const UsersInfo = () => {
   const [expandedAccordion, setExpandedAccordion] = useState<string>('')
-  const [employees, setEmployees] = useState<EmployeesData[]>([]);
+  const { employees } = useContext(EmployeeContext)
 
-  useEffect(() => {
-    getEmployeesData(setEmployees)
-  }, [])
+
   return (
     <>
       {employees.map((employee: EmployeesData) =>
