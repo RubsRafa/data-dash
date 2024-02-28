@@ -24,6 +24,10 @@ export const TableBarBox = styled.nav`
     color: var(--neutral--white);
   }
 
+  h2, p, span {
+    margin-block: auto;
+  }
+
   @media(min-width: 31.25rem) {
     grid-template-columns: 12% 20% 20% 28% 20%;
 

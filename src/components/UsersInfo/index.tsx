@@ -1,4 +1,4 @@
-import { UserInfoBox, Arrow, AccordionSummary, AccordionDetails, DesktopInfo } from "./style";
+import { UserInfoBox, Arrow, AccordionSummary, AccordionDetails, DesktopInfo, NoUsersBox } from "./style";
 import { Title_Medium, Title_Regular } from '../../styles/Typography';
 
 import { useContext, useState } from 'react';
@@ -24,6 +24,11 @@ const UsersInfo = () => {
 
   return (
     <>
+      {!employees[0] &&
+        <NoUsersBox>
+          Nenhum informação foi encontrada.
+        </NoUsersBox>
+      }
       {employees.map((employee: EmployeesData) =>
 
         <UserInfoBox key={employee.id}>

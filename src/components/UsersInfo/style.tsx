@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const NoUsersBox = styled.div`
+  padding: 0.875rem 1rem;
+  text-align: center;
+`;
+
 export const UserInfoBox = styled.div`
   padding: 0.875rem 1rem;
   

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DataTableBox = styled.div`
   max-width: 89%;
   margin-inline: auto;
+  margin-bottom: var(--spacing-medium--small);
   
   background-color: var(--neutral--white);
   box-shadow: var(--shadow--lightest);
