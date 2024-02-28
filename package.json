@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "yarn json-server db.json &",
-    "dev": "vite",
-    "deploy": "yarn start && yarn run dev",
+    "dev": "yarn start && vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
