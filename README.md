@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Data Dashboard 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Sobre o Projeto
+__Data Dashboard__ tem como objetivo a construção da visualização de uma tabela de dados, os quais são obtidos de uma API simulada utilizando json-server.
+O projeto tem como finalidade renderizar informações sobre foto, nome, cargo, data de admissão e telefone de funcionários. Além disso, é possível pesquisar por funcionários específicos a partir do seu nome, cargo e número de telefone.
 
-Currently, two official plugins are available:
+### Bibliotecas utilizadas
+- axios: Utilizado para realizar requisições HTTP.
+- json-server: Ferramenta para simplificar a criação de uma API REST completa a partir de um arquivo JSON.
+- styled-components: Utilizada para estilização em aplicações React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Pré- requisitos
+Para esse projeto, foram utilizadas as seguintes ferramentas:
+- [__Git__](https://git-scm.com/): Versão 2.42.0, para realizar o versionamento do código.
+- [__GitHub__](https://github.com/): Para armazenamento do código.
+- [__Yarn__](https://yarnpkg.com/): Gerenciador de pacotes. Versão 1.22.21.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Instalação
+1. Abra o terminal da sua máquina e clone o repositório usando HTTPS ou SSH. Segue um exemplo usando SSH:
+```bash
+git clone git@github.com:RubsRafa/data-dash.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até a pasta do projeto:
+```bash
+cd data-dash
+```
+
+3. Instale as dependências:
+```bash
+yarn install
+```
+
+4. Para visualizar os dados simulados, é necessário rodar o seguinte comando para consumir a API simulada:
+```bash
+npx json-server db.json
+# or
+yarn json-server db.json
+```
+
+5. Abra outro terminal e rode o seguinte comando para inicializar o projeto:
+```bash
+yarn run dev
+```
+
+*A API simulada estará disponível localmente na porta 3000. A aplicação estará disponível locamente na porta 5173.
+
+*Lembre-se de adicionar o arquivo `.env.local` na raiz do projeto, utilizando a variável de ambiente exemplo do arquivo `.env.example`, apontando para o endereço da API simulada.
